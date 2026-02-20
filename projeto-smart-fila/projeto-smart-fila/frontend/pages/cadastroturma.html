@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Alunos - Cadastro Turma</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+
+<body>
+    <header>
+        <section id="logoMenu">
+            <a href="../index.html" target="_self">
+                <h1>Smart Fila</h1>
+            </a>
+
+        </section>
+        <section id="menuCadastro">
+            <a href="../pages/cadastroturma.html" target="_self">
+                <button type="button"> Cad. Turma</button>
+            </a>
+            <a href="../pages/cadastrodocumentos.html" target="_self">
+                <button type="button"> Cad. Documentos</button>
+            </a>
+            <a href="../pages/cadastroaluno.html" target="_self">
+                <button type="button"> Cad. Aluno</button>
+            </a>
+
+
+        </section>
+    </header>
+    <main class="container-cadastro">
+        <section id="formulario">
+            <h2>Cadastrar Turmas</h2>
+            <form id="turmaForm">
+                <input type="hidden" id="turmaId">
+                <div class="inputGroup">
+                    <label for="nome">Nome da Turma</label>
+                    <input type="text" id="nomeTurma" placeholder="Ex.:3°D">
+                </div>
+                <button type="submit" id="btnSalvar">Salvar Documentos</button>
+            </form>
+        </section>
+        <section id="lista">
+            <h2>Turmas Cadastradas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome da Turma</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="corpoTabela"></tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+
+</html>

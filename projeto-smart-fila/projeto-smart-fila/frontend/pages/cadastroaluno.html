@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Alunos - Cadastro Aluno</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+
+<body>
+    <header>
+        <section id="logoMenu">
+            <a href="../index.html" target="_self">
+                <h1>Smart Fila</h1>
+            </a>
+
+        </section>
+        <section id="menuCadastro">
+            <a href="../pages/cadastroturma.html" target="_self">
+                <button type="button"> Cad. Turma</button>
+            </a>
+            <a href="../pages/cadastrodocumentos.html" target="_self">
+                <button type="button"> Cad. Documentos</button>
+            </a>
+            <a href="../pages/cadastroaluno.html" target="_self">
+                <button type="button"> Cad. Aluno</button>
+            </a>
+
+
+        </section>
+    </header>
+    <main class="container-cadastro">
+        <section id="formulario">
+            <h2>Cadastrar Turmas</h2>
+            <form id="alunoForm">
+                <input type="hidden" id="alunoId">
+
+                <div class="inputGroup">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="nomeAluno" id="ra" placeholder="Ex.: João da Silva">
+                </div>
+                <div class="inputGroup">
+                    <label for="ra">RA:</label>
+                    <input type="text" id="ra" placeholder="Ex.: 123456">
+                </div>
+
+                <div class="inputGroup">
+                    <label for="turma">Turma:</label>
+                    <select id="turmaId">
+                        <option value="">Escolha a turma</option>
+                    </select>
+                </div>
+                <div class="inputGroup">
+                    <label for="documentos">Documentos:</label>
+                    <select id="documentosId">
+                        <option value="">Escolha o documento</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="btnSalvar">Salvar Turma</button>
+            </form>
+        </section>
+        <section id="lista">
+            <h2>alunos Cadastrados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>RA</th>
+                        <th>Nome Aluno</th>
+                        <th>CPF</th>
+                        <th>RG</th>
+                        <th>Turma</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="corpoTabela"></tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>

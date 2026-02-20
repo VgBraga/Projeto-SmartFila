@@ -1,0 +1,128 @@
+:root {
+    --p: #2c3e50;
+    --s: #27ae60;
+    --d: #e74c3c;
+}
+
+body {
+    font-family: sans-serif;
+    background-img: #eee;
+    margin: 0;
+
+
+}
+
+header {
+    background-color: rgb(92, 62, 1);
+    color: white;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 50px;
+    height: 10vh;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+#menuCdastro {
+    text-align: center;
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background: var(--s);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.container-cadastro {
+    padding: 40px;
+    display: flex;
+    gap: 30px;
+    min-height: 90vh;
+    background: url(../img/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+}
+
+#formulario,
+#lista {
+    background-color: rgba(rgb(44, 62, 80), 0.8);
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 300px;
+    height: fit-content;
+    box-shadow: 0 4px 8px rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 0.1);
+}
+
+#formulario h2,
+#lista h2 {
+    color: var(--p);
+    margin-top: 0;
+    border-bottom: 2px solid var(--s);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.inputGroup label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--p);
+}
+
+.inputGroup input,
+.inputGroup select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#formulario button {
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: var(--p);
+    color: white;
+}
